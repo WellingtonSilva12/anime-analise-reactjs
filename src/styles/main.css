@@ -1,0 +1,26 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Roboto", sans-serif;
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-text-size-adjust: 100%;
+}
+
+header {
+  padding: 50px;
+  font-family: "Fredoka One", cursive;
+}
+header h1 {
+  font-family: "Fredoka One", cursive;
+  font-size: 50px;
+  font-weight: 400;
+  color: #2f52a2;
+}
+header h1 span {
+  color: #ff0000;
+  font-family: "Fredoka One", cursive;
+}/*# sourceMappingURL=main.css.map */
