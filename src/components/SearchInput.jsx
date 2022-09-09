@@ -10,8 +10,10 @@ const SearchInput = ({ value, onChange }) => {
   }
 
   return (
-    <div className="text-input">
-      <input type="search" value={displayValue} onChange={handleChange} />
+    <div className="content-input">
+      <div className="text-input">
+        <input type="search" value={displayValue} onChange={handleChange} />
+      </div>
     </div>
   )
 }
