@@ -1,13 +1,14 @@
-import React from 'react'
+import React, { useState } from 'react'
 
 const SearchInput = ({ value, onChange }) => {
+  const [displayValue, setDisplayValue] = useState(value)
   function handleChange(e) {
     onChange(e.target.value)
   }
 
   return (
-    <div>
-      <input type="search" value={value} onChange={handleChange} />
+    <div className="text-input">
+      <input type="search" value={displayValue} onChange={handleChange} />
     </div>
   )
 }

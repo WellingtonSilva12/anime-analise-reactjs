@@ -3,15 +3,19 @@
   padding: 0;
   box-sizing: border-box;
   font-family: "Roboto", sans-serif;
-  font-synthesis: none;
-  text-rendering: optimizeLegibility;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  -webkit-text-size-adjust: 100%;
+  text-align: center;
+}
+
+body {
+  margin: 0 auto;
+}
+
+ul {
+  list-style: none;
 }
 
 header {
-  padding: 50px;
+  padding: 50px 20px 10px;
   font-family: "Fredoka One", cursive;
 }
 header h1 {
@@ -23,4 +27,30 @@ header h1 {
 header h1 span {
   color: #ff0000;
   font-family: "Fredoka One", cursive;
+}
+
+.text-input {
+  display: flex;
+  justify-content: center;
+  padding: 2rem;
+}
+.text-input input {
+  width: 90%;
+  height: 35px;
+  border-radius: 5px;
+  border: 1px solid #cacaca;
+  outline: none;
+  padding: 10px;
+  text-align: start;
+}
+
+.list-anime {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  grid-gap: 15px;
+  margin: 0 1.5rem;
+}
+.list-anime img {
+  width: 100%;
+  border-radius: 5px;
 }/*# sourceMappingURL=main.css.map */
