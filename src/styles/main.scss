@@ -66,6 +66,14 @@ header {
       width: 100%;
       border-radius: 5px;
     }
+    .columns {
+      display: flex;
+      gap: 5px;
+      justify-content: space-evenly;
+      p {
+        font-size: 14px;
+      }
+    }
   }
 }
 

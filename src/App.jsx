@@ -40,7 +40,22 @@ function App() {
                 alt={item.attributes.canonicalTitle}
               />
               <h4>{item.attributes.canonicalTitle}</h4>
-              {/* <p>{item.attributes.synopsis}</p> */}
+              <div className="columns">
+                <p>
+                  <strong>Classificação: </strong>
+                  {item.attributes.averageRating}
+                </p>
+                <p>
+                  <strong>Episódios: </strong>
+                  {item.attributes.episodeCount}
+                </p>
+              </div>
+              <a
+                href={`https://www.youtube.com/watch?v=${item.attributes.youtubeVideoId}`}
+                target="_blank"
+              >
+                Vídeo
+              </a>
             </li>
           ))}
         </ul>
