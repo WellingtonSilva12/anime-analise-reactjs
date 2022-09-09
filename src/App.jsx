@@ -9,20 +9,25 @@ function App() {
   const [info, setInfo] = useState({})
 
   useEffect(() => {
-    if (textInput) {
-      fetch(`${api}anime?filter[text]=${textInput}&page[limit]=12`)
-        .then(response => response.json())
-        .then(data => {
-          setInfo(data)
-          console.log(data)
-        })
+    const fetchData = async () => {
+      if (textInput) {
+        await fetch(`${api}anime?filter[text]=${textInput}&page[limit]=12`)
+          .then(response => response.json())
+          .then(data => {
+            setInfo(data)
+            console.log(data)
+          })
+      }
     }
+    fetchData()
   }, [textInput])
 
   return (
     <div className="App">
       <Header />
       <SearchInput value={textInput} onChange={e => setTextInput(e)} />
+
+      {textInput && !info.data && <h1> Carregando...</h1>}
 
       {info.data && (
         <ul className="list-anime">

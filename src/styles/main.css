@@ -20,7 +20,7 @@ header {
 }
 header h1 {
   font-family: "Fredoka One", cursive;
-  font-size: 50px;
+  font-size: 25px;
   font-weight: 400;
   color: #2f52a2;
 }
@@ -53,4 +53,15 @@ header h1 span {
 .list-anime img {
   width: 100%;
   border-radius: 5px;
+}
+
+.donut {
+  width: 2rem;
+  height: 2rem;
+  margin: 2rem;
+  border-radius: 50%;
+  border: 0.3rem solid rgba(255, 0, 0, 0.3);
+  border-top-color: #2f52a2;
+  -webkit-animation: 1.5s spin infinite linear;
+          animation: 1.5s spin infinite linear;
 }/*# sourceMappingURL=main.css.map */
